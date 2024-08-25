@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 上為 meyerweb CSS Reset內容 */
+
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+body {
+    font-family: "Castoro", serif;
+    line-height: 1.5;
+    font-size: 24px;
+}
+.container {
+    /* 寬原本設計稿應該為1296，但想為量邊預留40px的padding，因此在box-sizing:border-box將padding跟border都納入總寬計算的情況下，應設為1296+40+40=1376px*/
+    max-width: 1376px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* 設計稿中resume、selfintro、infosections都寬636px，但很接近於畫面分一半，所以如果希望頁面拉伸時區域內容能皆一值保持在左右只有各半長度，那麼可以改為width:50%;就會自動維持，目前636px寫法則是:當頁面寬拉縮小於container設定寬時，兩邊維持636px直至變成都左右貼邊並開始變窄換行 */
+.width-636 {
+    max-width: 636px;
+}
+/* 給h2下width-636 設寬度，使其block不滿版才能套用到margin-left-auto的block置右，而因為要對齊下方636px寬的段落文字範圍，使h2設寬同為636px，文字在block內保持置左(預設即置左)，便可以與段落齊頭 */
+
+/* block元素可以使用margin-left: auto置右 */
+.ml-auto {
+    margin-left: auto;
+}
+.mt-40 {
+    margin-top: 160px;
+}
+.mb-2 {
+    margin-bottom: 8px;
+}
+.mb-3 {
+    margin-bottom: 12px;
+}
+.mb-4 {
+    margin-bottom: 16px;
+}
+.mb-10 {
+    margin-bottom: 40px;
+}
+.mb-20 {
+    margin-bottom: 80px;
+}
+.mb-40 {
+    margin-bottom: 160px;
+}
+
+
+.banner-title {
+    font-size: 128px;
+/*  letter spacing無法設倍數要用em單位  */
+    letter-spacing: 0.12em;  
+}
+.banner img{
+    display: block;
+    /* 也可用vertical-align: middle; 消除img因為作為行內元素受文字baseline影響多出的下方px*/
+    width: 636px;
+    max-width:100%;
+    margin: 0 auto;
+}
+
+.self-intro{
+    font-size: 32px;
+    background-color: #EFEFEF;
+    padding: 48px 0;
+}
+
+.info {
+    font-size: 24px;
+}
+.info h3 {
+    color: #AE0000;
+    font-size: 40px;
+    /* border是向外長框，避免額外的px與原設計稿規劃，採box-shadow方式寫inside stroke */
+    /* 也可在 h3 使用 ::after + position: absolute 設定 3px 線條，並定位在 h3 的底部 ( bottom ) */
+    box-shadow: 0 -3px 0 0 #AE0000 inset;
+}
+.section-contact li {
+    &:hover { 
+        opacity: 50%;
+    }
+}
+
+.section-education time, .section-education span, .section-work time, .section-work span {
+    color: #949494;
+    font-size: 20px;
+    /* display: block;  */
+    font-style: italic;
+    /* 數字特殊樣式 */
+    font-variant-numeric: oldstyle-nums;
+}
+
+.footer {
+    background-color: black;
+}
+.social-list {
+    padding: 64px 0;
+    text-align: center;
+}
+
+.footer li {
+    /* 需要變行內並排所以轉inline */
+    display: inline-block;
+    margin: 0 40px;
+}
+.footer a {
+    /* 需要高度所以轉block */
+    display: inline-block;
+    &:hover { 
+        opacity: 70%;
+    }
+}
+.footer img {
+    width: 64px;
+    height: 64px;
+    /* 去除掉img下多出的2-3px */
+    vertical-align: middle;
+}
