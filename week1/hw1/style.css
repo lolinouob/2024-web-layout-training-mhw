@@ -139,9 +139,13 @@ a {
     /* display: block;  */
     font-style: italic;
     /* 數字特殊樣式 */
-    font-variant-numeric: oldstyle-nums;
+    /* font-variant-numeric: oldstyle-nums; */
 }
 
+/* time標籤的字莫名會多出6px，外包一層強制設定30px高 */
+.height--30 {
+    height: 30px;
+}
 .footer {
     background-color: black;
 }
