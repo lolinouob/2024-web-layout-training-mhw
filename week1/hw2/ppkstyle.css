@@ -57,17 +57,13 @@ body {
     display: flex; 
 }
 
-.main img {
-    width: 216px;
-    height: 216px;
-}
-
-.article img {
-    width: 96px;
-    height: 96px;
+.adv-img {
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .article {
+    align-items: flex-start;
     margin-bottom: 24px;
 }
 .article-info {

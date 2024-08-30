@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+
+/* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,7 +46,6 @@ table {
 }
 /* 上為 meyerweb CSS Reset內容 */
 
-@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
 
 *,*::before,*::after {
   box-sizing: border-box;
@@ -55,7 +57,7 @@ body {
 }
 .container {
     /* 寬原本設計稿應該為1296，但想為量邊預留40px的padding，因此在box-sizing:border-box將padding跟border都納入總寬計算的情況下，應設為1296+40+40=1376px*/
-    max-width: 1376px;
+    max-width: 1296px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -106,7 +108,6 @@ a {
 .banner img{
     display: block;
     /* 也可用vertical-align: middle; 消除img因為作為行內元素受文字baseline影響多出的下方px*/
-    width: 636px;
     max-width:100%;
     margin: 0 auto;
 }
@@ -117,9 +118,6 @@ a {
     padding: 48px 0;
 }
 
-.info {
-    font-size: 24px;
-}
 .info h3 {
     color: #AE0000;
     font-size: 40px;
@@ -167,8 +165,6 @@ a {
     }
 }
 .footer img {
-    width: 64px;
-    height: 64px;
     /* 去除掉img下多出的2-3px */
     vertical-align: middle;
 }
