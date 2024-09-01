@@ -57,7 +57,7 @@ body {
 }
 .container {
     /* 寬原本設計稿應該為1296，但想為量邊預留40px的padding，因此在box-sizing:border-box將padding跟border都納入總寬計算的情況下，應設為1296+40+40=1376px*/
-    max-width: 1296px;
+    max-width: 1376px;
     margin: 0 auto;
     padding: 0 40px;
 }
