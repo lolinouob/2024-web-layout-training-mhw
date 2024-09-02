@@ -1,4 +1,131 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  background-color: $primary-color;
+  color: $text-color-light;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  @include pad {
+    padding-bottom: 40px;
+  }
+  @include mobile-larger {
+    padding: 24px 0;
+  }
+
+
+  &-content {
+    border-bottom: 1px solid $text-color-light;
+
+    padding-bottom: 32px;
+    @include mobile-larger {
+      padding-bottom: 24px;
+    }
+    
+    margin-bottom: 32px;
+    @include mobile-larger {
+      margin-bottom: 16px;
+    }
+
+    .nav {
+        gap: 48px;
+        // margin36-paddingB12=24
+        margin-bottom: 24px;
+        @include pad {
+          margin-bottom: 20px;
+        }
+
+        a {
+          padding: 12px 0;
+          &:hover {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+          }
+        }
+
+        @include mobile-larger {
+          display: none;
+        }
+    }  
+
+    .footer-contact {
+        // 英數優先套用roboto，但設計稿此處設為思源黑 
+        font-family: "Noto Sans TC", sans-serif;
+
+        font-size: $font-size-5;
+        @include mobile-larger {
+          font-size: $font-size-1;
+        }
+        
+        .material-symbols-outlined {
+          font-size: $font-size-6;
+          margin-right: 20px;
+          @include pad {
+            margin-right: 16px;
+          }
+          @include mobile-larger{
+          font-size: $font-size-3;
+          margin-right: 10px;
+          }  
+        }
+        gap: 8px;
+    }  
+
+
+    .social-link {
+      img {
+        width: 48px;
+        @include pad {
+          width: 40px;
+        }
+        @include mobile-larger {
+          width: 24px;
+        }
+      }
+      gap: 32px;
+      @include pad {
+        gap: 16px;
+      }
+      @include mobile-larger {
+        gap: 8px;
+      }
+
+    }
+  }
+
+  &-policy {
+    @include mobile-larger {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+
+  .terms {
+    font-size: $font-size-0;
+    @include mobile-larger {
+    font-size: $font-size-1;
+    }
+
+    gap: 48px;
+    @include mobile-larger {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 0;
+      gap: 8px;
+    }
+
+
+  }
+
+
+    
 }
+
+
+
+
+
+
+
+
+

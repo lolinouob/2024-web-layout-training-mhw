@@ -1,0 +1,138 @@
+.container {
+    /* width1296+padding12 */
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: calc($gap / 2);
+    padding-right: calc($gap / 2);
+    @include pad {
+        // max-width: 696px;
+        // 設計稿768-grid算出的container696，多出的空間/2=36
+        padding-left: 36px;
+        padding-right: 36px;
+
+    }
+    @include mobile {
+        // max-width: 348px;
+        // 設計稿427-grid算出的container348，多出的空間/2=39.5
+        padding-left: 39.5;
+        padding-right: 39.5;
+    }
+}
+
+//flex
+.d-flex {
+    display: flex;
+}
+.f-wrap {
+    flex-wrap: wrap;
+}
+.fd-column {
+    flex-direction: column;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-fe {
+    justify-content: flex-end;
+}
+.ai-c {
+    align-items: center;
+}
+.ai-fs {
+    align-items: flex-start;
+}
+
+//gap
+@for $i from 0 through $max {
+    .gap-#{$i} {
+      gap: $i * 4px;
+    }
+}
+
+//text-align
+.ta-c {
+    text-align: center;
+}
+.ta-r {
+    text-align: right;
+}
+
+// margin
+.ml-auto {
+    margin-left: auto;
+}
+.mr-auto {
+    margin-right: auto;
+}
+@for $i from 0 through $max {
+    .mb-#{$i} {
+      margin-top: $i * 4px;
+    }
+    .mt-#{$i} {
+        margin-bottom: $i * 4px;
+    }
+    .ml-#{$i} {
+        margin-left: $i * 4px;
+    }
+    .mr-#{$i} {
+        margin-right: $i * 4px;
+    }
+    .my-#{$i} {
+        margin: $i * 4px 0;
+    }
+    .mx-#{$i} {
+        margin-bottom: 0 $i * 4px;
+    }
+    .m-#{$i} {
+        margin: $i * 4px;
+    }
+}
+
+// padding
+@for $i from 0 through $max {
+    .pt-#{$i} {
+      padding-top: $i * 4px;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i * 4px;
+    }
+    .pl-#{$i} {
+        padding-left: $i * 4px;
+    }
+    .pr-#{$i} {
+        padding-right: $i * 4px;
+    }
+    .py-#{$i} {
+        padding: $i * 4px 0;
+    }
+    .px-#{$i} {
+        padding-bottom: 0 $i * 4px;
+    }
+    .p-#{$i} {
+        padding: $i * 4px;
+    }
+}
+
+//grid
+@for $i from 1 through $columns-num {
+    .col-#{$i} {
+      width: calc(100% * ($i / $columns-num));
+    padding-left: calc($gap / 2);
+    padding-right: calc($gap / 2);
+    }
+    @include pad {
+        .col-md-#{$i} {
+            width: calc(100% * ($i / $columns-num));
+        padding-left: calc($gap / 2);
+        padding-right: calc($gap / 2);
+        }
+    }
+    @include mobile {
+        .col-sm-#{$i} {
+            width: calc(100% * ($i / $columns-num));
+        padding-left: calc($gap / 2);
+        padding-right: calc($gap / 2);
+        }
+    }
+}

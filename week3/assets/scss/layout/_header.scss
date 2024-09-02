@@ -1,4 +1,61 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  background-color: $primary-color;
+  color: $text-color-light;
+  @include mobile-larger {
+      padding-bottom: 0;
+    }
+
+    .container {
+    @include mobile-larger {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .logo{
+    width: 80px;
+    @include mobile-larger{
+      margin-left: 12px;
+      margin-bottom: 12px;
+    }
+  }
+  
+  .nav {
+    font-size: $font-size-2;
+    gap:64px;
+
+    @include mobile-larger {
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 0;
+      font-size: $font-size-1;
+      
+    }
+    &-item {
+      @include mobile-larger {
+        width: 50%;
+        outline: solid 1px #FFF;
+        text-align: center;
+      }
+    }
+    &-item a {
+      padding: 12px 0;
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        @include mobile-larger {
+          text-decoration: none;
+          background-color: $secondary-color;
+
+        }
+    }
+      @include mobile-larger {
+        height: calc($font-size-1 + 24px);
+        width: 100%;
+      }
+    }
+  }
 }
