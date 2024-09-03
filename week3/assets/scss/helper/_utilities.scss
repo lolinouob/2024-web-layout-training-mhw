@@ -1,6 +1,6 @@
 .container {
-    /* width1296+padding12 */
-    max-width: 1320px;
+    /* width1296+padding24 */
+    max-width: 1344px;
     margin: 0 auto;
     padding-left: calc($gap / 2);
     padding-right: calc($gap / 2);
@@ -13,9 +13,9 @@
     }
     @include mobile {
         // max-width: 348px;
-        // 設計稿427-grid算出的container348，多出的空間/2=39.5
-        padding-left: 39.5;
-        padding-right: 39.5;
+        // 設計稿375-grid算出的container348，多出的空間/2=13.5
+        padding-left: 13.5;
+        padding-right: 13.5;
     }
 }
 
@@ -36,11 +36,17 @@
 .jc-fe {
     justify-content: flex-end;
 }
+.jc-c {
+    justify-content: center;
+}
 .ai-c {
     align-items: center;
 }
 .ai-fs {
     align-items: flex-start;
+}
+.ai-fe {
+    align-items: flex-end;
 }
 
 //gap
@@ -57,8 +63,17 @@
 .ta-r {
     text-align: right;
 }
+.ta-l {
+    text-align: left;
+}
 
 // margin
+.mb-auto {
+    margin-bottom: auto;
+}
+.mb-auto {
+    margin-bottom: auto;
+}
 .ml-auto {
     margin-left: auto;
 }

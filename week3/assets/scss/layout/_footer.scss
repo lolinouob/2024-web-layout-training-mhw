@@ -26,14 +26,14 @@
 
     .nav {
         gap: 48px;
-        // margin36-paddingB12=24
-        margin-bottom: 24px;
+        // margin36-a paddingB10=26
+        margin-bottom: 26px;
         @include pad {
           margin-bottom: 20px;
         }
 
         a {
-          padding: 12px 0;
+          padding: 10px 0;
           &:hover {
             text-decoration: underline;
             text-underline-offset: 8px;

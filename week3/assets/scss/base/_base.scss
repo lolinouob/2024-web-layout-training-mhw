@@ -16,6 +16,14 @@ a {
     display: inline-block;
     color: inherit;
 }
-a:hover {
+a:hover, .btn {
     cursor: pointer;
 }
+.btn {
+        color: $text-color-light;
+        background-color: $primary-color;
+        &:hover {
+            background-color: darken($primary-color, $amount: 3%);
+
+        }
+    }

@@ -1,0 +1,403 @@
+.main-index {
+
+    .container{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        @include mobile {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    h2 {
+        font-size: $font-size-6;
+        color: $secondary-color;
+        font-weight: $fw-bold;
+        margin-bottom: 48px;
+
+        @include mobile {
+            font-size: $font-size-3;
+            margin-bottom: 24px;
+
+        }
+    }
+}
+
+.banner {
+    h2 {
+        // 英數優先套用roboto，但設計稿此處設為思源黑 
+        font-family: "Noto Sans TC", sans-serif;
+
+        font-size: $font-size-5;
+        font-weight: $fw-regular;
+        margin-bottom: 0;
+
+    }
+
+    //視窗範圍減去header82px
+    height: calc(100vh - 82px);
+    background-image: url("../images/home-header.png");
+    background-size: cover;
+    background-position-x: 35%;
+    @include pad {
+        height: calc(70px - 82px);
+        background-image: url("../images/home-header-sm.png");
+    }
+    @include mobile {
+        height: calc(80vh - 156.56px);
+        background-image: url("../images/home-header-sm.png");
+    }
+
+    &-info {
+        color: $secondary-color;
+        height: 100%;
+        h2 {
+            font-size: $font-size-5;
+            @include mobile-larger {
+                font-size: $font-size-3;
+            }
+            @include mobile {
+                font-size: $font-size-1;
+            }
+        }
+        h1 {
+            font-size: $font-size-7;
+            font-weight: $fw-bold;
+            margin-bottom: 4px;
+            @include mobile-larger {
+                font-size: $font-size-6;
+            }
+            @include mobile {
+                font-size: $font-size-3;
+                margin-bottom: 8px;
+            }
+        }
+        
+        .btn-banner {
+            font-size: $font-size-2;
+            font-weight: $fw-medium;
+            padding: 6px 12px;
+        }
+    }
+}
+
+.feature {
+    background-color: $bg-light;
+
+    &-list {
+        flex-wrap: wrap;
+        gap: 24px;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &-card {
+        //3個gap加總72，除以4分配扣除4個卡片
+        width: calc(25% - 18px);
+        @include pad {
+            width: calc(50% - 12px);
+        }
+        @include mobile {
+            width: 100%;
+        }
+
+        .feature-content {
+            height: 100%;
+
+            img {
+                width: 100px;
+                margin-bottom: 16px;
+            }
+            h3 {
+                color: $secondary-color;
+                font-weight: $fw-bold;
+                font-size: $font-size-3;
+                padding-bottom: 8px;
+            }
+            p {
+                font-size: $font-size-1;
+                @include mobile {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    
+
+}
+
+.series {
+    &-list {
+        gap: 24px;
+        @include pad {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &-card {
+        //2個gap加總48，除以3分配扣除3個卡片
+        width: calc(100% / 3 - 16px);
+        @include pad {
+            width: 60%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+
+        a:hover {
+            opacity: 90%;
+        }
+    }
+    &-content {
+        width: 100%;
+        h3 {
+            color: $primary-color;
+            font-size: $font-size-6;
+            font-weight: $fw-black;
+            font-style: italic;
+        }
+    }
+
+}
+
+.cobrand {
+    background-image: url("../images/index-bg.png");
+    background-size: cover;
+    @include pad {
+        background-image: url("../images/index-bg-md.png");
+        background-position-y: 35%;
+    }
+    @include mobile {
+        background-image: url("../images/index-bg-sm.png");
+    }
+
+    h2 {
+        color: $text-color-light;
+    }
+
+    &-list {
+        //底部白塊面增加點區隔
+        gap: 1px;
+        @include pad {
+            gap: 24px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &-card {
+        background-color: $text-color-light;
+        width: 50%;
+        @include pad {
+            width: 100%;
+        }
+        a {
+            width: 100%;
+            &:hover {
+                opacity: 90%;
+            }
+        }
+    }
+
+    &-content {
+        .brand-img-doubleA {
+            background-size: cover;
+            background-position: center;
+            height: 240px;
+            background-image: url("../images/home-section4-1.png");
+        }
+        .brand-img-youth {
+            background-size: cover;
+            background-position: center;
+            height: 240px;
+            background-image: url("../images/home-section4-2.png");
+        }
+        @include mobile {
+            .brand-img-doubleA {
+                background-image: url("../images/home-section4-1-sm.png");
+            }
+            .brand-img-youth {
+                background-image: url("../images/home-section4-2-sm.png");
+            }
+        }
+            
+
+        h3 {
+            color: $primary-color;
+            font-size: $font-size-6;
+            font-weight: $fw-black;
+            font-style: italic;
+            padding: 8px 0;
+        }
+    }
+
+}
+
+.recommend {
+    &-list {
+        flex-wrap: wrap;
+        gap: 24px;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+    &-card {
+        //3個gap加總72，除以4分配扣除4個卡片
+        width: calc(25% - 18px);
+        @include pad {
+            width: calc(50% - 12px);
+        }
+        @include mobile {
+            width: 100%;
+        }
+
+        outline: 1px solid #DEE2E6;
+        border-radius: 4px;
+        box-shadow: 0px 2px 6px #00000029;
+
+        .recommend-content {
+            height: 100%;
+            
+            .recommend-text {
+                padding: 16px;
+            height: 100%;
+            }
+            span {
+                font-weight: $fw-medium;
+                margin-bottom: 8px;
+            }
+            p {
+                //至多3行字範圍
+                // height: 72px;
+                margin-bottom: 72px;
+            }
+            time {
+                color: $soft-pedal-color;
+                font-size: $font-size-0;
+            }
+        }
+    }
+    
+
+}
+
+.contact {
+    background: $bg-light;
+
+    .container {
+        max-width: 636px;
+        @include pad {
+            max-width: 576px;
+        }
+        @include mobile {
+            width: 100%;
+        }
+    }
+    p {
+        font-size: $font-size-2;
+        margin-bottom: 24px; 
+        @include pad {
+            font-size: $font-size-1;
+        }
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    
+    &-form-label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    &-form-input {
+        display: block;
+        width: 100%;
+        background: $bg-light;
+        outline: 0;
+        border: solid 1px #000;
+        padding: 6px 12px;
+        //placeholder預設字體<16px
+        font-size: $font-size-1;
+        transition: box-shadow 0.5s;
+    }
+    &-form-input:focus {
+        box-shadow: 0 0px 1px 2px rgba(170, 6, 1, 0.3);
+    }
+    &-form textarea {
+        resize: none;
+    }
+
+    &-checkbox-agree {
+        margin-bottom: 48px;
+        @include mobile {
+            margin-bottom: 24px;
+        }
+
+        input {
+            display: none;
+        }
+        label {
+            position: relative;
+            padding-left: 28px;
+            // 使整體一起縮排
+            display: flex;
+            align-items: flex-start;
+
+            // 自設勾選框
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                
+                border: 2px solid #000;
+                border-radius: 2px;
+                background: $bg-light;
+            
+                margin-top: 3px;
+            }
+            // 自設勾選框的勾，隱藏狀態
+            &::after {
+                content: "";
+                display: none;
+                position: absolute;
+                left: 5px;
+                top: 3px;
+                width: 6px;
+                height: 12px;
+
+                border-bottom: 2px solid $bg-light;
+                border-right: 2px solid $bg-light;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    // checkbox勾選效果
+    &-checkbox-agree input:checked ~ label::before {
+        background: $secondary-color;
+    }
+    &-checkbox-agree input:checked ~ label::after {
+        display: block;
+    }
+
+    &-form-btn {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 416px;
+
+        border: none;
+        font-weight: $fw-bold;
+        background: $primary-color;
+        color: $text-color-light;
+        padding: 16px 0px;
+    }
+    
+    
+}
