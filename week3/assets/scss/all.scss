@@ -17,13 +17,17 @@
 @import './layout/header';
 @import './layout/footer';
 @import './layout/grid';
+@import './layout/page_title';
+@import './layout/product_title';
+
 
 
 // components
 @import './components/breadcrumb';
-@import './components/product_title';
 @import './components/product_cardlist';
 @import './components/pagination';
+@import './components/store_area_selector';
+
 
 
 
@@ -32,5 +36,7 @@
 @import './pages/index';
 @import './pages/product_optical';
 @import './pages/product_sunglasses';
+@import './pages/stores';
+
 
 

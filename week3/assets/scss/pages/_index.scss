@@ -9,13 +9,13 @@
         }
     }
     h2 {
-        font-size: $font-size-7;
+        font-size: $font-size-9;
         color: $secondary-color;
         font-weight: $fw-bold;
         margin-bottom: 48px;
 
         @include mobile {
-            font-size: $font-size-3;
+            font-size: $font-size-5;
             margin-bottom: 24px;
 
         }
@@ -27,7 +27,7 @@
         // 英數優先套用roboto，但設計稿此處設為思源黑 
         font-family: "Noto Sans TC", sans-serif;
 
-        font-size: $font-size-5;
+        font-size: $font-size-7;
         font-weight: $fw-regular;
         margin-bottom: 0;
 
@@ -51,29 +51,29 @@
         color: $secondary-color;
         height: 100%;
         h2 {
-            font-size: $font-size-5;
+            font-size: $font-size-7;
             @include mobile-larger {
-                font-size: $font-size-3;
+                font-size: $font-size-5;
             }
             @include mobile {
                 font-size: $font-size-1;
             }
         }
         h1 {
-            font-size: $font-size-8;
+            font-size: $font-size-10;
             font-weight: $fw-bold;
             margin-bottom: 4px;
             @include mobile-larger {
-                font-size: $font-size-7;
+                font-size: $font-size-9;
             }
             @include mobile {
-                font-size: $font-size-3;
+                font-size: $font-size-5;
                 margin-bottom: 8px;
             }
         }
         
         .btn-banner {
-            font-size: $font-size-2;
+            font-size: $font-size-4;
             font-weight: $fw-medium;
             padding: 6px 12px;
         }
@@ -111,7 +111,7 @@
             h3 {
                 color: $secondary-color;
                 font-weight: $fw-bold;
-                font-size: $font-size-3;
+                font-size: $font-size-5;
                 padding-bottom: 8px;
             }
             p {
@@ -154,7 +154,7 @@
         width: 100%;
         h3 {
             color: $primary-color;
-            font-size: $font-size-7;
+            font-size: $font-size-9;
             font-weight: $fw-black;
             font-style: italic;
         }
@@ -226,7 +226,7 @@
 
         h3 {
             color: $primary-color;
-            font-size: $font-size-7;
+            font-size: $font-size-9;
             font-weight: $fw-black;
             font-style: italic;
             padding: 8px 0;
@@ -298,7 +298,7 @@
         }
     }
     p {
-        font-size: $font-size-2;
+        font-size: $font-size-4;
         margin-bottom: 24px; 
         @include pad {
             font-size: $font-size-1;

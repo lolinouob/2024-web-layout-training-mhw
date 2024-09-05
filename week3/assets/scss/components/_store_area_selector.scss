@@ -1,0 +1,14 @@
+store-area-selector {
+    label {
+        margin-right: 16px;
+        font-size: $font-size-5;
+        @include mobile {
+            margin-right: 8px;
+            font-size: $font-size-1;
+        }
+    }
+
+    select {
+        font-size: $font-size-2;
+    }
+}
