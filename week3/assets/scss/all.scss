@@ -16,6 +16,21 @@
 //layout
 @import './layout/header';
 @import './layout/footer';
+@import './layout/grid';
+
+
+// components
+@import './components/breadcrumb';
+@import './components/product_title';
+@import './components/product_cardlist';
+@import './components/pagination';
+
+
+
 
 //pages
 @import './pages/index';
+@import './pages/product_optical';
+@import './pages/product_sunglasses';
+
+

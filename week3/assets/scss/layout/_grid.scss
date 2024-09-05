@@ -1,0 +1,22 @@
+.container {
+    /* width1296+padding24 */
+    max-width: 1344px;
+    margin: 0 auto;
+}
+.padding-wrapper {
+    padding-left: calc($gap / 2);
+    padding-right: calc($gap / 2);
+    @include pad {
+        // max-width: 696px;
+        // 設計稿768-grid算出的container696，多出的空間/2=36
+        padding-left: 36px;
+        padding-right: 36px;
+
+    }
+    @include mobile {
+        // max-width: 348px;
+        // 設計稿375-grid算出的container348，多出的空間/2=13.5
+        padding-left: 13.5px;
+        padding-right: 13.5px;
+    }
+}

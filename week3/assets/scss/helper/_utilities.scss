@@ -1,24 +1,3 @@
-.container {
-    /* width1296+padding24 */
-    max-width: 1344px;
-    margin: 0 auto;
-    padding-left: calc($gap / 2);
-    padding-right: calc($gap / 2);
-    @include pad {
-        // max-width: 696px;
-        // 設計稿768-grid算出的container696，多出的空間/2=36
-        padding-left: 36px;
-        padding-right: 36px;
-
-    }
-    @include mobile {
-        // max-width: 348px;
-        // 設計稿375-grid算出的container348，多出的空間/2=13.5
-        padding-left: 13.5;
-        padding-right: 13.5;
-    }
-}
-
 //flex
 .d-flex {
     display: flex;
@@ -132,22 +111,32 @@
 //grid
 @for $i from 1 through $columns-num {
     .col-#{$i} {
-      width: calc(100% * ($i / $columns-num));
-    padding-left: calc($gap / 2);
-    padding-right: calc($gap / 2);
+        width: calc(100% * ($i / $columns-num));
+        padding-left: calc($gap / 2);
+        padding-right: calc($gap / 2);
     }
     @include pad {
         .col-md-#{$i} {
             width: calc(100% * ($i / $columns-num));
-        padding-left: calc($gap / 2);
-        padding-right: calc($gap / 2);
+            padding-left: calc($gap / 2);
+            padding-right: calc($gap / 2);
         }
     }
     @include mobile {
         .col-sm-#{$i} {
             width: calc(100% * ($i / $columns-num));
-        padding-left: calc($gap / 2);
-        padding-right: calc($gap / 2);
+            padding-left: calc($gap / 2);
+            padding-right: calc($gap / 2);
         }
+    }
+}
+
+//border
+@for $i from 0 through $max {
+    .bl-#{$i} {
+      border-left: $i * 1px solid #555555;
+    }
+    .br-#{$i} {
+        border-right: $i * 1px solid #555555;
     }
 }

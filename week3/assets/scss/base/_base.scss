@@ -24,6 +24,5 @@ a:hover, .btn {
         background-color: $primary-color;
         &:hover {
             background-color: darken($primary-color, $amount: 3%);
-
         }
     }
