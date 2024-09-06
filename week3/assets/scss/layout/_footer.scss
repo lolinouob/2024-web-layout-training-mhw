@@ -23,7 +23,7 @@
     @include mobile-larger {
       margin-bottom: 16px;
     }
-
+    
     .nav {
         gap: 48px;
         // margin36-a paddingB10=26
@@ -66,10 +66,15 @@
           }  
         }
         gap: 8px;
+
     }  
 
 
     .social-link {
+      a:hover {
+        margin-top: -5px;
+      }
+
       img {
         width: 48px;
         @include pad {
