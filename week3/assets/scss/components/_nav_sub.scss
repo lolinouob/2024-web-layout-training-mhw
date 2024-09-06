@@ -1,0 +1,17 @@
+.nav-sub {
+    background: $secondary-color;
+
+    .nav-sub-list {
+        gap: 48px;
+        
+        a {
+            color: $text-color-light;
+            font-size: $font-size-4;
+            font-weight: $fw-bold;
+            padding: 13px 0px;
+        }
+    }
+    @include mobile-larger {
+        display: none;
+    }
+}

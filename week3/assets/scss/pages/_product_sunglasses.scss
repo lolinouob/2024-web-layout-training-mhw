@@ -1,15 +1,16 @@
+// 隱藏當前頁面bar
+ul:hover .sunglasses a::before {
+    display: none;
+}
 
 .product-sunglasses {
     .series-nav {
-    
         // bar顯示當前頁面
         .sunglasses a::before {
             border-bottom: 8px solid $primary-color;  
         }
-        // 隱藏當前頁面bar
-        ul:hover .sunglasses a::before{
-            border-bottom: 8px solid transparent; 
-        }
+
+        
     }
 
     .sunglasses-banner {

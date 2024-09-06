@@ -1,17 +1,14 @@
-// .product-list {
-//     // col已計入不需重複寫
-//     margin-left: calc(-1 * ($gap/2));
-//     margin-right: calc(-1 * ($gap/2));
-// }
-
 .product-list{
     margin-bottom: 0px;
     @include pad {
         margin-bottom: 40px;
     }
+    // 由於pad斷點設計的padding>12，負值不以外層抵消，而統一透過padding-wrapper扣除   
+    margin-left: -12px;
+    margin-right: -12px;
 }
 
-.product-item {
+.product-card {
     width: 100%;
     &:hover {
         opacity: 90%;

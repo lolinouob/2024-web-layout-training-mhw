@@ -90,8 +90,10 @@
             flex-direction: column;
             align-items: center;
         }
+        margin-left: -12px;
+        margin-right: -12px;
     }
-    &-card {
+    &-item {
         //3個gap加總72，除以4分配扣除4個卡片
         width: calc(25% - 18px);
         @include pad {
@@ -101,7 +103,7 @@
             width: 100%;
         }
 
-        .feature-item {
+        .feature-card {
             height: 100%;
 
             img {
@@ -134,9 +136,11 @@
             flex-direction: column;
             align-items: center;
         }
+        margin-left: -12px;
+        margin-right: -12px;
     }
 
-    &-card {
+    &-item {
         //2個gap加總48，除以3分配扣除3個卡片
         width: calc(100% / 3 - 16px);
         @include pad {
@@ -150,7 +154,7 @@
             opacity: 90%;
         }
     }
-    &-item {
+    &-card {
         width: 100%;
         h3 {
             color: $primary-color;
@@ -185,9 +189,11 @@
             flex-direction: column;
             align-items: center;
         }
+        margin-left: -12px;
+        margin-right: -12px;
     }
 
-    &-card {
+    &-item {
         background-color: $text-color-light;
         width: 50%;
         @include pad {
@@ -201,7 +207,7 @@
         }
     }
 
-    &-item {
+    &-card {
         .brand-img-doubleA {
             background-size: cover;
             background-position: center;
@@ -244,8 +250,10 @@
             align-items: center;
             gap: 16px;
         }
+        margin-left: -12px;
+        margin-right: -12px;
     }
-    &-card {
+    &-item {
         //3個gap加總72，除以4分配扣除4個卡片
         width: calc(25% - 18px);
         @include pad {
@@ -259,7 +267,7 @@
         border-radius: 4px;
         box-shadow: 0px 2px 6px #00000029;
 
-        .recommend-item {
+        .recommend-card {
             height: 100%;
             
             .recommend-content {
@@ -325,7 +333,7 @@
         transition: box-shadow 0.5s;
     }
     &-form-input:focus {
-        box-shadow: 0 0px 1px 2px rgba(170, 6, 1, 0.3);
+        box-shadow: 0 0px 1px 2px $form-focus-shadow;
     }
     &-form textarea {
         resize: none;

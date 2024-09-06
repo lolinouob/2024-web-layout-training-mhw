@@ -1,3 +1,7 @@
+// 隱藏當前頁面bar
+ul:hover .optical a::before{
+    display: none;
+}
 
 .product-optical{
     .series-nav {
@@ -5,10 +9,6 @@
         // bar顯示當前頁面
         .optical a::before {
             border-bottom: 8px solid $primary-color;  
-        }
-        // 隱藏當前頁面bar
-        ul:hover .optical a::before{
-            border-bottom: 8px solid transparent; 
         }
     }
 

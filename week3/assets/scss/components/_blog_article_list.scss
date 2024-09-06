@@ -1,0 +1,139 @@
+.article {
+    .article-container {
+        margin-bottom: 124px;
+        @include pad {
+            margin-bottom: 80px;
+        }
+        @include mobile {
+            margin-bottom: 64px;
+        }
+    }
+
+    &-title {
+        margin-bottom: 16px;
+        @include pad {
+            margin-bottom: 4px;
+        }
+
+        h2 {
+            font-size: $font-size-6;
+            color: $secondary-color;
+            transition: 0.5s;
+            a:hover {
+                font-weight: $fw-bold;
+                color: $primary-color;
+                opacity: 80%;
+            }
+
+            @include pad {
+                font-size: $font-size-5;
+            }
+            
+
+        }
+        h3 {
+            font-size: $font-size-4;
+            font-weight: $fw-medium;
+
+            @include pad {
+                font-size: $font-size-1;
+            }
+        }
+        time {
+            font-weight: $fw-medium;
+            opacity: 70%;
+        }
+    }    
+
+
+    &-card {
+        margin-left: -12px;
+        margin-right: -12px;
+
+            @include mobile {
+                flex-direction: column;
+            }
+
+        img {
+            max-height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            &:hover {
+                opacity: 90%;
+            }
+            @include mobile {
+                padding-bottom: 8px;
+
+            }
+        }
+
+        p {
+            color: #555555;
+            font-size: $font-size-4;
+            @include pad {
+                font-size: $font-size-1;
+            }
+            @include mobile {
+                display: none;
+            }
+        }
+
+        
+        .btn-more {
+
+            color: $secondary-color;
+            font-size: $font-size-7;
+            font-weight: $fw-black;
+            transition: 0.3s;
+            @include pad {
+                display: none;
+            }
+
+            &:hover {
+                font-size: $font-size-8;
+                color: $primary-color;
+                opacity: 80%;
+            }
+        }
+        .btn-more-inline {
+            display: none;
+            &:hover {
+                color: $primary-color;
+                opacity: 80%;
+            }
+            @include pad {
+                display: inline-block;
+            }
+        }
+
+    }
+
+    &-list {
+        gap:60px;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

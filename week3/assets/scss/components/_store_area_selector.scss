@@ -1,4 +1,18 @@
-store-area-selector {
+.store-area-selector {
+    // 比照卡片3張平分寬度-3張間隔的加總平分扣在每張上
+    width: calc(100% / 3 - $gap * 2 / 3);
+    margin-bottom: 40px;
+    @include pad {
+    width: 60%;
+    }
+    @include mobile {
+        margin-bottom: 24px;
+        width: 100%
+    }
+
+
+
+
     label {
         margin-right: 16px;
         font-size: $font-size-5;
@@ -9,6 +23,26 @@ store-area-selector {
     }
 
     select {
+        flex-grow: 1;
+        border-radius: 0px;
+        border: 1px solid #ced4da;
+        
+        color: #495057;
         font-size: $font-size-2;
+        padding: 6px 12px;
+        
+        // 去掉右側下拉箭頭，以svg圖替代
+        appearance: none;
+        position: relative;
+        background: url("../images/select-arrow_dropdown.svg");
+        background-repeat: no-repeat;
+        background-size:24px;
+        background-position: 98% center;
+
+        &:focus {
+            outline: solid 1px $primary-color;
+            border: none;
+            box-shadow: 0 0px 0px 4px $form-focus-shadow;
+        }
     }
 }

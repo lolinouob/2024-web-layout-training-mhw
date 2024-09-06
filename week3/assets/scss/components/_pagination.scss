@@ -1,5 +1,8 @@
 .pagination {
     margin-bottom: 80px;
+    @include mobile {
+        margin-bottom: 64px;
+    }
     color: $pagination-color;
     
     ul {
@@ -18,24 +21,25 @@
             flex-grow: 1;
             text-align: center;
         }
+        &:hover:not(.pagination-active) {
+            background-color: darken(#FFF, 5%);
+        }
     }
     a {
         width: 100%;
         border-top: 1px solid $pagination-color;
         border-bottom: 1px solid $pagination-color;
-        
+            
         padding: 12px 16px;
-        font-size: $font-size-2;
+        font-size: $font-size-2;           
         @include mobile {
             padding: 12px 15px;
-            font-size: $font-size-1;
-
-        &:hover:not(.pagination-active) {
-            background-color: darken(#FFF, $amount: 3%);
+            font-size: $font-size-1;    
         }
-    }
-    .previous, .next {
-        padding: 11px 12px;
+
+        
+        .previous, .next {
+            padding: 11px 12px;
             font-size: $font-size-3;
             @include mobile {
                 padding: 11px 13.5px;

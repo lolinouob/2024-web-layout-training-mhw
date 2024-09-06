@@ -28,6 +28,7 @@
     align-items: flex-end;
 }
 
+
 //gap
 @for $i from 0 through $max {
     .gap-#{$i} {
@@ -46,9 +47,16 @@
     text-align: left;
 }
 
+//hide
+.d-none-md {
+    @include pad {
+        display: none;
+    }
+}
+
 // margin
-.mb-auto {
-    margin-bottom: auto;
+.mt-auto {
+    margin-top: auto;
 }
 .mb-auto {
     margin-bottom: auto;
@@ -76,7 +84,7 @@
         margin: $i * 4px 0;
     }
     .mx-#{$i} {
-        margin-bottom: 0 $i * 4px;
+        margin: 0 $i * 4px;
     }
     .m-#{$i} {
         margin: $i * 4px;
@@ -101,7 +109,7 @@
         padding: $i * 4px 0;
     }
     .px-#{$i} {
-        padding-bottom: 0 $i * 4px;
+        padding: 0 $i * 4px;
     }
     .p-#{$i} {
         padding: $i * 4px;
@@ -109,7 +117,7 @@
 }
 
 //grid
-@for $i from 1 through $columns-num {
+@for $i from 0 through $columns-num {
     .col-#{$i} {
         width: calc(100% * ($i / $columns-num));
         padding-left: calc($gap / 2);

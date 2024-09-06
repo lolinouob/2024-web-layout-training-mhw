@@ -1,0 +1,61 @@
+.store-container {
+        margin-bottom: calc(80px - 48px);
+        @include pad {
+            margin-bottom: calc(80px - 24px);
+        }
+        @include mobile {
+            margin-bottom: calc(64px - 24px);
+        }
+
+}
+.store-list {
+    color: #212529;    
+    // 由於pad斷點設計的padding>12，負值不以外層抵消，而統一透過padding-wrapper扣除     
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.store-card {
+    height: 100%;
+}
+
+
+.store-name {
+    font-size: $font-size-5;
+    padding: 8px 24px;
+    outline: 1px solid #00000020;
+}
+.store-info {
+    padding: 16px 24px;
+    outline: 1px solid #00000020;
+        flex-grow: 1;
+        
+        font-size: $font-size-4;
+        .material-symbols-outlined {
+            font-size: $font-size-5;
+            margin-right: 8px;
+            // 使icon與文字水平對齊
+            padding-top: 2px;
+        }
+        
+        li:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+    .store-btn {
+        width: 100%;
+        padding: 16px 0;
+        text-align: center;
+        
+        color: $text-color-light;
+        background: #000;
+        &:hover {
+            opacity: 85%;
+        }
+
+        margin-bottom: 48px;
+        @include pad {
+            margin-bottom: 24px;
+        }
+    }
+
