@@ -1,0 +1,215 @@
+.blog-pg1 {
+    .nav-sub {
+        @include mobile-larger {
+            display: block;
+            gap: 25px;
+            .blog-searcher {
+                display: none;
+            }
+        }
+        @include mobile {
+            margin-left: -12px;
+            margin-right: -12px;
+            .nav-sub-list{
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 0;
+                
+                
+            }
+            .nav-sub-item {
+                width: 50%;
+                text-align: center;
+                outline: 1px solid $primary-color;
+                a{
+                    font-size: $font-size-1;
+                }
+            }
+        }
+    }
+    
+}
+
+.blog-article {
+        .page-path {
+            margin-top: 24px;
+            @include pad {
+                margin-top: 8px;
+            }
+            @include mobile {
+                margin-top: 16px;
+            }
+            
+            margin-bottom: 8px;
+            gap: 16px;
+            position: relative;
+            
+            li::after{
+                content: "/";
+                position: absolute;
+                padding: 0 4px;
+            }
+            li:last-child::after {
+                content: "";
+            }
+            .page-path-current {
+                color: $primary-color;
+            }
+            a:hover {
+                opacity: 80%;
+            }
+        }
+    .article-main-tag { 
+        a{
+            color: $primary-color;
+            font-size: $font-size-5;
+            font-weight: $fw-bold;
+            gap: 15px;
+            margin-bottom: 8px;
+        }
+    }
+    .article-content {
+        margin-bottom: 40px;
+        @include mobile {
+            margin-bottom: 64px;
+        }
+
+        h1 {
+            font-size: $font-size-9;
+        }
+        h2 {
+            font-size: $font-size-5;
+            font-weight: $fw-medium;
+            margin-bottom: 16px;
+            @include pad {
+                margin-bottom: 24px;
+            }
+            @include mobile {
+                margin-bottom: 16px;
+            }
+        }
+        img {
+            max-width: 100%;
+            margin-bottom: 8px;
+            @include pad {
+                margin-bottom: 16px;
+            }
+            @include mobile {
+                margin-bottom: 8px;
+            }
+        }
+        p {
+            color: #555555;
+            &:not(:last-child) {
+                margin-bottom: 40px;
+                @include pad {
+                    margin-bottom: 24px;
+                }
+                @include pad {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    
+    .article-share {
+        margin-bottom: 16px;
+        
+        gap: 16px;
+        span {
+            font-weight: $fw-bold;
+        }
+        a {
+            width: 24px;
+            &:hover {
+                opacity: 70%;
+            }
+        }
+    }
+    .line-separator{
+        border-bottom: 1px solid #707070;
+        margin-bottom: 24px;
+    }
+    
+    .article-turner {
+        .article-previous {
+            span {
+                margin-right: 12px;
+                vertical-align: top;
+            }
+        }
+        .article-next {
+            span {
+                margin-left: 12px;
+                vertical-align: top;
+            }
+        }
+        a:hover {
+            color: $primary-color;
+        }
+        
+    }
+
+    .article-column {
+        margin-bottom: 80px;
+    }
+
+    .article-container {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    
+    .tag-column {
+        width: 290px;
+        @include pad {
+            width: 160px;
+        }
+        color: $primary-color;
+        font-weight: $fw-bold;
+        
+        .tag-title {
+            font-size: $font-size-6;
+            margin-bottom: 4px;
+            @include pad {
+                font-size: $font-size-1;
+                margin-bottom: 8px;
+            }
+            
+            span {
+                font-size: $font-size-7;
+                vertical-align: text-bottom;
+                margin-right: 12px;
+                @include pad {
+                    font-size: $font-size-4;
+                    margin-right: 2px;
+                    
+                    
+                }
+            }
+        }
+        li {
+            font-size: $font-size-5;
+            display: inline;
+            margin-right: 24px;   
+            
+            @include pad {
+                font-size: $font-size-1;
+                margin-right: 16px;   
+                
+            }
+        }
+    }
+
+    @include mobile {
+        .article-share, .line-separator, .article-turner, .tag-column {
+            display: none;
+        }
+    }
+
+
+
+
+
+
+
+}

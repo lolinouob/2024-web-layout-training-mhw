@@ -24,13 +24,14 @@
 
 
 
+
 // components
 @import './components/breadcrumb';
 @import './components/product_card_list';
 @import './components/pagination';
 @import './components/store_area_selector';
 @import './components/store_card_list';
-@import './components/blog_article_list';
+@import './components/blog_post_list';
 @import './components/nav_sub';
 
 
@@ -43,6 +44,7 @@
 @import './pages/product_optical';
 @import './pages/product_sunglasses';
 @import './pages/faq';
+@import './pages/blog_pg1';
 
 
 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>部落格</title>
+  </head>
+  <body class="blog-pg1">
+    <%- include('./layout/header'); -%>
+    <%- include('./layout/nav_sub'); -%>
+    
+    <main class="blog-article container padding-wrapper">
+
+      <ol class="page-path d-flex ai-c">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">特別企劃</a></li>
+        <li><a class="page-path-current" href="#">情人特別企劃</a></li>
+      </ol>
+
+      <ul class="article-main-tag d-flex ai-c">
+        <li><a href="#">#special</a></li>
+        <li><a href="#">#event</a></li>
+      </ul>
+      
+      <div class="article-container">
+        <div class="article-column d-flex jc-fs ai-fs">
+
+        <div class="article-main col-8 col-md-9 col-sm-12">
+          <div class="article-content">
+            <h1 class="article-title">情人特別企劃</h1>
+            <h2>2020 Valentine’s Special</h2>
+            <img src="../assets/images/blogpage-1.png" alt="image of couple">
+            <p>
+              一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。
+              <br>
+              本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+            </p>
+            <img src="../assets/images/blogpage-2.png" alt="image of glasses">
+            <p>
+              一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。
+              <br>
+              本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+            </p>
+            <img src="../assets/images/blogpage-3.png" alt="image of sunglasses">
+            <p>
+              一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。
+              <br>
+              本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+            </p>
+            <img src="../assets/images/blogpage-4.png" alt="image of couple">
+            <p>
+              2/14(五)-2/20(日) 
+              <br>
+              至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個
+              <br>
+              期間優惠還有~~持他牌鏡框更換鏡片
+              <br>
+              薄型非球面鏡片折300元
+              <br>
+              濾藍光鏡片折500元
+              <br>
+              快快帶上另一半 讓彼此每一次睜開眼，都被愛的視線包圍!
+            </p>
+          </div>
+          <div class="article-share d-flex ai-c">
+            <span>Share</span>
+            <a href="#"><img src="../assets/images/logo-facebook.png" alt="facebook icon"></a>
+            <a href="#"><img src="../assets/images/logo-instagram.png" alt="instagram icon"></a>
+          </div>
+          
+          <div class="line-separator"></div>
+
+          <div class="article-turner d-flex jc-sb ai-c">
+            <a class="article-previous" href="#"><span  class="material-symbols-outlined">arrow_back</span>上一篇：街頭潮人訪問 1</a>
+            <a class="article-next" href="#">下一篇：街頭潮人訪問 2<span  class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+        </div>  
+
+        <div class="tag-column col-4 col-md-3">
+          <div class="tag-title"><span class="material-symbols-outlined">label</span>TAGS</div>
+          <ul class="article-reltag-list ">
+            <li>
+              <a href="#">#special</a>
+            </li>
+            <li>
+              <a href="#">#sale</a>
+            </li>
+            <li>
+              <a href="#">#new_item</a>
+            </li>
+            <li>
+              <a href="#">#interview</a>
+            </li>
+            <li>
+              <a href="#">#trivia</a>
+            </li>
+            <li>
+              <a href="#">#news</a>
+            </li>
+            <li>
+              <a href="#">#event</a>
+            </li>
+          </ul>
+
+        </div>
+        </div>
+      </div>
+      
+    
+
+      
+
+
+
+
+
+      
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
