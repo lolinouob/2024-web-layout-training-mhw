@@ -177,17 +177,17 @@
           <form class="contact-form" action="">
             <ul>
               <li>
-                <label for="name" class="contact-form-label">姓名</label>
+                <label for="name" class="contact-form-label" required>姓名</label>
                 <input type="text" id="name" name="name" placeholder="陳小明" class="contact-form-input">
               </li>
 
               <li>
-                <label for="phone" class="contact-form-label" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">聯絡電話</label>
+                <label for="phone" class="contact-form-label">聯絡電話</label>
                 <input type="tel" id="phone" name="phone" placeholder="0912-345-678" class="contact-form-input">
               </li>
 
               <li>
-                <label for="email" class="contact-form-label">電子郵件</label>
+                <label for="email" class="contact-form-label" required>電子郵件</label>
                 <input type="email" id="email" name="email" placeholder="example@email.com" class="contact-form-input">
               </li>
 
@@ -197,7 +197,7 @@
               </li>
 
               <li class="contact-checkbox-agree">
-                <input type="checkbox" id="policy-agree" name="policy agreement" value="agree">
+                <input type="checkbox" id="policy-agree" name="policy agreement" value="agree" required >
                 <label for="policy-agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
               </li>
             </ul>

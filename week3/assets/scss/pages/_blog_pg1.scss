@@ -75,10 +75,6 @@
         }
     }
     .article-content {
-        margin-bottom: 40px;
-        @include mobile {
-            margin-bottom: 64px;
-        }
 
         h1 {
             font-size: $font-size-9;
@@ -120,50 +116,12 @@
             }
         }
     }
-    
-    .article-share {
-        margin-bottom: 16px;
-        
-        gap: 16px;
-        span {
-            font-weight: $fw-bold;
-        }
-        a {
-            width: 24px;
-            &:hover {
-                opacity: 70%;
-            }
-        }
-    }
-    .line-separator{
-        border-bottom: 1px solid #707070;
-        margin-bottom: 24px;
-    }
-    
-    .article-turner {
-        .article-previous {
-            span {
-                margin-right: 12px;
-                vertical-align: top;
-            }
-        }
-        .article-next {
-            span {
-                margin-left: 12px;
-                vertical-align: top;
-            }
-        }
-        a:hover {
-            color: $primary-color;
-        }
-        
-    }
 
     .article-column {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         @include mobile {
             // 已有article-content的mb64px
-            margin-bottom: 0px;
+            margin-bottom: 64px;
         }
     }
 
@@ -215,6 +173,60 @@
             }
         }
     }
+    
+    .article-footer {
+        margin-bottom: 80px;
+            @include mobile {
+                margin-bottom: 64px;
+            }
+
+        .article-share {
+            margin-bottom: 16px;
+            
+            gap: 16px;
+            span {
+                font-weight: $fw-bold;
+            }
+            a {
+                width: 24px;
+                &:hover {
+                    opacity: 70%;
+                }
+            }
+        }
+    
+        hr {
+            margin: 0;
+            box-shadow: none;
+            color: #707070;
+            margin-bottom: 24px;
+            border-style: solid;
+            border-width: 1px;
+            width: 100%;
+        }
+        
+        .article-turner {         
+            width: 100%;   
+            .article-previous {
+                span {
+                    margin-right: 12px;
+                    vertical-align: top;
+                }
+            }
+            .article-next {
+                span {
+                    margin-left: 12px;
+                    vertical-align: top;
+                }
+            }
+            a:hover {
+                color: $primary-color;
+            }   
+        }
+
+    }
+    
+
 
     @include mobile {
         .article-share, .line-separator, .article-turner, .tag-column {
