@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>部落格</title>
-    <script type="module" crossorigin src="/2024-web-layout-training-mhw/assets/main-5fe43c98.js"></script>
-    <link rel="stylesheet" href="/2024-web-layout-training-mhw/assets/main-c015994d.css">
+    <script type="module" crossorigin src="/2024-web-layout-training-mhw/assets/main-49556ada.js"></script>
+    <link rel="stylesheet" href="/2024-web-layout-training-mhw/assets/main-bef57c58.css">
   </head>
   <body class="blog-pg1">
     <header class="header py-4">
@@ -34,25 +34,29 @@
     </div>
     
 </div>    
-    <main class="blog-article container padding-wrapper">
+    <main class="blog-article">
 
-      <ol class="page-path d-flex ai-c">
+      <div class="container padding-wrapper">
+        <ol class="page-path d-flex ai-c">
         <li><a href="index.html">首頁</a></li>
         <li><a href="blog.html">部落格</a></li>
         <li><a href="blog.html">特別企劃</a></li>
         <li><a class="page-path-current" href="#">情人特別企劃</a></li>
-      </ol>
+        </ol>
+      </div>
 
-      <ul class="article-main-tag d-flex ai-c">
-        <li><a href="#">#special</a></li>
-        <li><a href="#">#event</a></li>
-      </ul>
+      <div class="container padding-wrapper">
+        <ul class="article-main-tag d-flex ai-c">
+          <li><a href="#">#special</a></li>
+          <li><a href="#">#event</a></li>
+        </ul>
+      </div>
       
-      <div class="article-container">
-        <div class="article-column d-flex jc-fs ai-fs">
+      <div class="article-container container padding-wrapper">
+        <div class="article-column row d-flex jc-fs ai-fs">
 
-        <div class="article-main col-8 col-md-9 col-sm-12">
-          <div class="article-content">
+          <div class="article-main col-8 col-md-9 col-sm-12">
+            <div class="article-content">
             <h1 class="article-title">情人特別企劃</h1>
             <h2>2020 Valentine’s Special</h2>
             <img src="/2024-web-layout-training-mhw/assets/blogpage-1-89258247.png" alt="image of couple">
@@ -87,10 +91,10 @@
               <br>
               快快帶上另一半 讓彼此每一次睜開眼，都被愛的視線包圍!
             </p>
+            </div>  
           </div>  
-        </div>  
 
-        <div class="tag-column col-4 col-md-3">
+          <div class="article-reltag col-4 col-md-3">
           <div class="tag-title"><span class="material-symbols-outlined">label</span>TAGS</div>
           <ul class="article-reltag-list ">
             <li>
@@ -116,37 +120,31 @@
             </li>
           </ul>
 
+          </div>
         </div>
       </div>
 
-      <!-- <div class="container padding-wrapper d-flex jc-sb ai-c"> -->
-        <div class="article-footer  col-8 col-md-12">
-          <div class="article-share d-flex">
-            <span>Share</span>
-            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAtUlEQVR42u3UQRHCMBCF4V9CJFQCEiIBCUiohEjAAThoHLQOkAAOWgfLrVMydIZ28g5l9r1rZr9DkoVAh4naESDLxhtGRjreMAeODgwkzsS5iVQPSDR8SxVgIrKWCsDECZTABZTAC7TAVQ2U1xu4Mdb8B+XjvNf+aGVGNWAO/AfQLlZymfjR5z4g8mtMCzRqIKqBVg0kNTDsBR70c8v0i46+KhxwwAEHHFg7n6VAhrCR2AJkwhuDZzEDlEThtgAAAABJRU5ErkJggg==" alt="facebook icon"></a>
-            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAVFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU4H24AAAAG3RSTlMAMBBQIMCwgNDPkEDwv2Cv76Dgf3Cf349PX29fixLHAAABoklEQVR4XqWVW5eDIAyEw62gouultd3N//+fexw9LlQE93Se+pAPJskUaZeY2oqTqtpJ0LvUzFnNKgJ0y0W1OnDT8wX1Yq9n6NYJSkp0N4Y2Qvco15SRBtKvNfB/p4Lu6APzCeqLhCKiefFDGYmW+SmJFlfz1nHOv8SGaiK99m1LFyiGaL3CkmHmLgbEs0WHT4yxY2j7ZajCPYGaIFFVAycoXN1XBDpw/OBID4mDR3SJ2hiQh8BWknTXSIqAQ/3NKmVvOwElgQEltdzwenV1DjQL7YPkK78QzSngsP3DEqozQMAP0NikOAFgWcaAxCEngEmkBHkwaQCspVjIWp8BmmT2MoDKANct+U+bLo/1s8WVo+Hy4esDQvUYdSneDxn9+wY6B6Rj6Gt6vaYvhpzMACBCoT4HkBxiYJD0BrjDMxNcYsJoYewu+ZDVxjN7UwuKhIes/FTGKbH7Y1yW3pY+LmO8AixjHv/xQbF7bsxC/JSAifeca4/l6qx/rN3rfb5AvkUaEN8oD/YlPF+QD87TpgyY2LMa88Cojk6tcWnAGfvn5hfle19LNUdJcAAAAABJRU5ErkJggg==" alt="instagram icon"></a>
-          </div>
-          
-          <hr class="line-separator">
-    
-          <div class="article-turner d-flex jc-sb ai-c">
-            <a class="article-previous" href="#"><span  class="material-symbols-outlined">arrow_back</span>上一篇：街頭潮人訪問 1</a>
-            <a class="article-next" href="#">下一篇：街頭潮人訪問 2<span  class="material-symbols-outlined">arrow_forward</span></a>
+      <div class="container padding-wrapper">
+        <div class="row d-flex jc-sb ai-c">
+          <div class="article-footer col-8 col-md-12">
+            <div class="article-share d-flex">
+              <span>Share</span>
+              <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAtUlEQVR42u3UQRHCMBCF4V9CJFQCEiIBCUiohEjAAThoHLQOkAAOWgfLrVMydIZ28g5l9r1rZr9DkoVAh4naESDLxhtGRjreMAeODgwkzsS5iVQPSDR8SxVgIrKWCsDECZTABZTAC7TAVQ2U1xu4Mdb8B+XjvNf+aGVGNWAO/AfQLlZymfjR5z4g8mtMCzRqIKqBVg0kNTDsBR70c8v0i46+KhxwwAEHHFg7n6VAhrCR2AJkwhuDZzEDlEThtgAAAABJRU5ErkJggg==" alt="facebook icon"></a>
+              <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAVFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU4H24AAAAG3RSTlMAMBBQIMCwgNDPkEDwv2Cv76Dgf3Cf349PX29fixLHAAABoklEQVR4XqWVW5eDIAyEw62gouultd3N//+fexw9LlQE93Se+pAPJskUaZeY2oqTqtpJ0LvUzFnNKgJ0y0W1OnDT8wX1Yq9n6NYJSkp0N4Y2Qvco15SRBtKvNfB/p4Lu6APzCeqLhCKiefFDGYmW+SmJFlfz1nHOv8SGaiK99m1LFyiGaL3CkmHmLgbEs0WHT4yxY2j7ZajCPYGaIFFVAycoXN1XBDpw/OBID4mDR3SJ2hiQh8BWknTXSIqAQ/3NKmVvOwElgQEltdzwenV1DjQL7YPkK78QzSngsP3DEqozQMAP0NikOAFgWcaAxCEngEmkBHkwaQCspVjIWp8BmmT2MoDKANct+U+bLo/1s8WVo+Hy4esDQvUYdSneDxn9+wY6B6Rj6Gt6vaYvhpzMACBCoT4HkBxiYJD0BrjDMxNcYsJoYewu+ZDVxjN7UwuKhIes/FTGKbH7Y1yW3pY+LmO8AixjHv/xQbF7bsxC/JSAifeca4/l6qx/rN3rfb5AvkUaEN8oD/YlPF+QD87TpgyY2LMa88Cojk6tcWnAGfvn5hfle19LNUdJcAAAAABJRU5ErkJggg==" alt="instagram icon"></a>
+            </div>
+            
+            <hr class="line-separator">
+      
+            <div class="article-turner d-flex jc-sb ai-c">
+              <a class="article-previous" href="#"><span  class="material-symbols-outlined">arrow_back</span>上一篇：街頭潮人訪問 1</a>
+              <a class="article-next" href="#">下一篇：街頭潮人訪問 2<span  class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
           </div>
         </div>
-      <!-- </div> -->
+      </div>
 
       </div>
-      
-    
-
-      
-
-
-
-
-
-      
+            
     </main>
 
     <footer class="footer">
