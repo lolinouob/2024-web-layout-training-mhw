@@ -74,8 +74,15 @@
             }
         }
     }
-    .article-content {
 
+    .article-column {
+        margin-bottom: 40px;
+        @include mobile {
+            margin-bottom: 64px;
+        }
+    }
+
+    .article-content {
         h1 {
             font-size: $font-size-9;
             @include mobile {
@@ -116,21 +123,8 @@
             }
         }
     }
-
-    .article-column {
-        margin-bottom: 40px;
-        @include mobile {
-            // 已有article-content的mb64px
-            margin-bottom: 64px;
-        }
-    }
-
-    .article-container {
-        margin-left: -12px;
-        margin-right: -12px;
-    }
     
-    .tag-column {
+    .article-reltag {
         width: 290px;
         @include pad {
             width: 160px;
@@ -229,7 +223,7 @@
 
 
     @include mobile {
-        .article-share, .line-separator, .article-turner, .tag-column {
+        .article-footer, .article-reltag {
             display: none;
         }
     }

@@ -3,6 +3,8 @@
     max-width: 1344px;
     margin: 0 auto;
 }
+
+// 讓pc在小於container尺寸時能有12px padding，同時用以消內包row的正負值margin
 .padding-wrapper {
     padding-left: calc($gap / 2);
     padding-right: calc($gap / 2);
@@ -18,5 +20,33 @@
         // 設計稿375-grid算出的container348，多出的空間/2=13.5
         padding-left: 13.5px;
         padding-right: 13.5px;
+    }
+}
+
+.row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+//grid
+@for $i from 0 through $columns-num {
+    .col-#{$i} {
+        width: calc(100% * ($i / $columns-num));
+        padding-left: calc($gap / 2);
+        padding-right: calc($gap / 2);
+    }
+    @include pad {
+        .col-md-#{$i} {
+            width: calc(100% * ($i / $columns-num));
+            padding-left: calc($gap / 2);
+            padding-right: calc($gap / 2);
+        }
+    }
+    @include mobile {
+        .col-sm-#{$i} {
+            width: calc(100% * ($i / $columns-num));
+            padding-left: calc($gap / 2);
+            padding-right: calc($gap / 2);
+        }
     }
 }

@@ -10,8 +10,6 @@
     .store-flex {
         color: #212529; 
         
-        margin-left: -12px;
-        margin-right: -12px;
         padding-left: 0;
         padding-right: 0;
 
@@ -49,6 +47,7 @@
             flex-direction: row;
             justify-content: space-between;
 
+            // PC版card內部沒有拆成需要col，因此不在html標籤上row，而是獨立在css寫斷點
             margin-left: -12px;
             margin-right: -12px;
 

@@ -3,9 +3,6 @@
     @include pad {
         margin-bottom: 40px;
     }
-    // 由於pad斷點設計的padding>12，負值不以外層抵消，而統一透過padding-wrapper扣除   
-    margin-left: -12px;
-    margin-right: -12px;
 }
 
 .product-card {

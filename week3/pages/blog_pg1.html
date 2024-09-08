@@ -10,25 +10,29 @@
     <%- include('./layout/header'); -%>
     <%- include('./layout/nav_sub'); -%>
     
-    <main class="blog-article container padding-wrapper">
+    <main class="blog-article">
 
-      <ol class="page-path d-flex ai-c">
+      <div class="container padding-wrapper">
+        <ol class="page-path d-flex ai-c">
         <li><a href="index.html">首頁</a></li>
         <li><a href="blog.html">部落格</a></li>
         <li><a href="blog.html">特別企劃</a></li>
         <li><a class="page-path-current" href="#">情人特別企劃</a></li>
-      </ol>
+        </ol>
+      </div>
 
-      <ul class="article-main-tag d-flex ai-c">
-        <li><a href="#">#special</a></li>
-        <li><a href="#">#event</a></li>
-      </ul>
+      <div class="container padding-wrapper">
+        <ul class="article-main-tag d-flex ai-c">
+          <li><a href="#">#special</a></li>
+          <li><a href="#">#event</a></li>
+        </ul>
+      </div>
       
-      <div class="article-container">
-        <div class="article-column d-flex jc-fs ai-fs">
+      <div class="article-container container padding-wrapper">
+        <div class="article-column row d-flex jc-fs ai-fs">
 
-        <div class="article-main col-8 col-md-9 col-sm-12">
-          <div class="article-content">
+          <div class="article-main col-8 col-md-9 col-sm-12">
+            <div class="article-content">
             <h1 class="article-title">情人特別企劃</h1>
             <h2>2020 Valentine’s Special</h2>
             <img src="../assets/images/blogpage-1.png" alt="image of couple">
@@ -63,10 +67,10 @@
               <br>
               快快帶上另一半 讓彼此每一次睜開眼，都被愛的視線包圍!
             </p>
+            </div>  
           </div>  
-        </div>  
 
-        <div class="tag-column col-4 col-md-3">
+          <div class="article-reltag col-4 col-md-3">
           <div class="tag-title"><span class="material-symbols-outlined">label</span>TAGS</div>
           <ul class="article-reltag-list ">
             <li>
@@ -92,37 +96,31 @@
             </li>
           </ul>
 
+          </div>
         </div>
       </div>
 
-      <!-- <div class="container padding-wrapper d-flex jc-sb ai-c"> -->
-        <div class="article-footer  col-8 col-md-12">
-          <div class="article-share d-flex">
-            <span>Share</span>
-            <a href="#"><img src="../assets/images/logo-facebook.png" alt="facebook icon"></a>
-            <a href="#"><img src="../assets/images/logo-instagram.png" alt="instagram icon"></a>
-          </div>
-          
-          <hr class="line-separator">
-    
-          <div class="article-turner d-flex jc-sb ai-c">
-            <a class="article-previous" href="#"><span  class="material-symbols-outlined">arrow_back</span>上一篇：街頭潮人訪問 1</a>
-            <a class="article-next" href="#">下一篇：街頭潮人訪問 2<span  class="material-symbols-outlined">arrow_forward</span></a>
+      <div class="container padding-wrapper">
+        <div class="row d-flex jc-sb ai-c">
+          <div class="article-footer col-8 col-md-12">
+            <div class="article-share d-flex">
+              <span>Share</span>
+              <a href="#"><img src="../assets/images/logo-facebook.png" alt="facebook icon"></a>
+              <a href="#"><img src="../assets/images/logo-instagram.png" alt="instagram icon"></a>
+            </div>
+            
+            <hr class="line-separator">
+      
+            <div class="article-turner d-flex jc-sb ai-c">
+              <a class="article-previous" href="#"><span  class="material-symbols-outlined">arrow_back</span>上一篇：街頭潮人訪問 1</a>
+              <a class="article-next" href="#">下一篇：街頭潮人訪問 2<span  class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
           </div>
         </div>
-      <!-- </div> -->
+      </div>
 
       </div>
-      
-    
-
-      
-
-
-
-
-
-      
+            
     </main>
 
     <%- include('./layout/footer'); -%>

@@ -116,28 +116,6 @@
     }
 }
 
-//grid
-@for $i from 0 through $columns-num {
-    .col-#{$i} {
-        width: calc(100% * ($i / $columns-num));
-        padding-left: calc($gap / 2);
-        padding-right: calc($gap / 2);
-    }
-    @include pad {
-        .col-md-#{$i} {
-            width: calc(100% * ($i / $columns-num));
-            padding-left: calc($gap / 2);
-            padding-right: calc($gap / 2);
-        }
-    }
-    @include mobile {
-        .col-sm-#{$i} {
-            width: calc(100% * ($i / $columns-num));
-            padding-left: calc($gap / 2);
-            padding-right: calc($gap / 2);
-        }
-    }
-}
 
 //border
 @for $i from 0 through $max {
