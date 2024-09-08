@@ -8,8 +8,10 @@
             }
         }
         @include mobile {
-            margin-left: -12px;
-            margin-right: -12px;
+            .padding-wrapper {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
             .nav-sub-list{
                 width: 100%;
                 flex-wrap: wrap;
@@ -80,6 +82,9 @@
 
         h1 {
             font-size: $font-size-9;
+            @include mobile {
+                width: 100%;
+            }
         }
         h2 {
             font-size: $font-size-5;
@@ -156,6 +161,10 @@
 
     .article-column {
         margin-bottom: 80px;
+        @include mobile {
+            // 已有article-content的mb64px
+            margin-bottom: 0px;
+        }
     }
 
     .article-container {
