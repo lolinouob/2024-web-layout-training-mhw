@@ -178,26 +178,26 @@
             <ul>
               <li>
                 <label for="name" class="contact-form-label">姓名</label>
-                <input type="text" id="name" placeholder="陳小明" class="contact-form-input">
+                <input type="text" id="name" name="name" placeholder="陳小明" class="contact-form-input">
               </li>
 
               <li>
                 <label for="phone" class="contact-form-label" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">聯絡電話</label>
-                <input type="tel" id="name" placeholder="0912-345-678" class="contact-form-input">
+                <input type="tel" id="phone" name="phone" placeholder="0912-345-678" class="contact-form-input">
               </li>
 
               <li>
                 <label for="email" class="contact-form-label">電子郵件</label>
-                <input type="email" id="name" placeholder="example@email.com" class="contact-form-input">
+                <input type="email" id="email" name="email" placeholder="example@email.com" class="contact-form-input">
               </li>
 
               <li>
-                <label for="name" class="contact-form-label">意見反應</label>
-                <textarea id="comment" placeholder="請輸入您的意見" class="contact-form-input" rows="6"></textarea>
+                <label for="comment" class="contact-form-label">意見反應</label>
+                <textarea id="comment" name="comment" placeholder="請輸入您的意見" class="contact-form-input" rows="6"></textarea>
               </li>
 
               <li class="contact-checkbox-agree">
-                <input type="checkbox" name="policy agreement" id="policy-agree">
+                <input type="checkbox" id="policy-agree" name="policy agreement">
                 <label for="policy-agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
               </li>
             </ul>
