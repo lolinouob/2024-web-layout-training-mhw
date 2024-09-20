@@ -52,7 +52,7 @@ ul:hover .sunglasses a::before {
 }
 
 .product-img {
-    @for $i from 1 through $columns-num {
+    @for $i from 1 through 100 {
         &#{$i} {
             background-image: url("../images/product-" + #{$i} + ".png");
         }
