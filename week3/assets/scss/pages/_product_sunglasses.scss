@@ -51,10 +51,11 @@ ul:hover .sunglasses a::before {
     }
 }
 
-.product-img {
-    @for $i from 1 through 100 {
-        &#{$i} {
-            background-image: url("../images/product-" + #{$i} + ".png");
-        }
-    }
-}
+// 目前跟optical系列用同檔名規則，若檔名規則有不同再用這段改
+// .product-img {
+//     @for $i from 1 through 100 {
+//         &#{$i} {
+//             background-image: url("../images/product-" + $i + ".png");
+//         }
+//     }
+// }

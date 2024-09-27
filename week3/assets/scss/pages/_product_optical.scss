@@ -53,7 +53,7 @@ ul:hover .optical a::before{
 .product-img {
     @for $i from 1 through 100 {
         &#{$i} {
-            background-image: url("../images/product-" + #{$i} + ".png");
+            background-image: url("../images/product-" + $i + ".png");
         }
     }
 }
